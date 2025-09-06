@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi Sitio</title>
+	<style>
+		body {
+			font-family: system-ui, sans-serif;
+			max-width: 900px;
+			margin: 2rem auto;
+			line-height: 1.5;
+		}
+		header, nav, main, aside, footer, article, section {
+			padding: 12px;
+			border: 1px solid #ddd;
+			margin-bottom: 12px;
+		}
+		nav a { margin-right: 8px; }
+		.date { color: #666; }
+
+		/* Estilos semánticos nuevos */
+		blockquote {
+			margin: 0 0 1rem 0;
+			padding-left: 1rem;
+			border-left: 4px solid #ddd;
+			font-style: italic;
+		}
+		blockquote footer {
+			margin-top: .5rem;
+			font-style: normal;
+			color: #555;
+		}
+		address {
+			font-style: normal;
+			line-height: 1.6;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Mi Blog Personal</h1>
+		<nav aria-label="Navegación principal">
+			<a href="#inicio">Ir al inicio</a>
+			<a href="#articulos">Ver artículos</a>
+			<a href="#contacto">Ir a contacto</a>
+		</nav>
+	</header>
+
+	<main id="inicio">
+		<article aria-labelledby="post-1-titulo">
+			<h2 id="post-1-titulo">Novedades de HTML5</h2>
+			<p class="date">Publicado el 20/12/2024</p>
+
+			<p>HTML5 trae nuevas etiquetas <em>muy interesantes</em> para mejorar la web.</p>
+
+			<!-- Paso 5: citas y referencias -->
+			<blockquote cite="https://www.goodreads.com/quotes/333253-books-are-a-uniquely-portable-magic">
+				<p>“a uniquely portable magic”</p>
+				<footer>
+					<cite>Stephen King</cite>, <span lang="en">On Writing</span>
+				</footer>
+			</blockquote>
+
+			<p>
+				La <span class="label">URL</span>:
+				<a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+					Visitar example.com
+				</a>
+			</p>
+
+			<p>
+				Visita a la
+				<abbr title="World Health Organization">WHO</abbr>
+				para más información.
+			</p>
+		</article>
+	</main>
+
+	<aside aria-label="Información adicional">
+		<section aria-labelledby="acerca">
+			<h2 id="acerca">Acerca de</h2>
+			<p>Desarrollador web y escritor ocasional.</p>
+		</section>
+
+		<section aria-labelledby="contacto">
+			<h2 id="contacto">Contacto</h2>
+
+			<address>
+				<div>Email: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></div>
+			</address>
+		</section>
+	</aside>
+
+	<footer aria-label="Pie de página">
+		<div>© 2025 Mi Sitio</div>
+		<div>Hecho con <em>café</em> y paciencia.</div>
+	</footer>
+</body>
+</html>
